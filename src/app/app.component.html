@@ -1,5 +1,5 @@
 <h1>
   {{title}}
 </h1>
-<p [@text1state]="state" class="text1">Text 1: I will fade out</p>
+<p [@text1state]="state" (@text1state.done)="text1animated($event)" class="text1">Text 1: I will fade out</p>
 <p [@text2state]="state" class="text2">Text 2: I will fade in</p>
